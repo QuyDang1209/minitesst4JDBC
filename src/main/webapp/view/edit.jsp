@@ -16,14 +16,44 @@
 <span>${mess2}</span>
 <div>
     <form method="post">
-        <c:if test="${dsk2 != null}">
-        <input type="hidden" name="ID" value="<c:out value ='${dsk2.id}'/>">
-        </c:if>
-        <input type="text" name="CODE" value="<c:out value ='${dsk2.code}'/>">
-        <input type="text" name="PRICE" value="<c:out value ='${dsk2.price}'/>">
-        <input type="text" name="COLOR" value="<c:out value ='${dsk2.color}'/>">
-        <input type="text" name="DECRIPTION" value="<c:out value ='${dsk2.decription}'/>">
-        <input type="text" name="IMG" value="<c:out value ='${dsk2.img}'/>">
+        <table>
+            <tr>ID</tr>
+            <tr>
+                <c:if test="${dsk2 != null}">
+                    <input type="hidden" name="ID" value="<c:out value ='${dsk2.id}'/>">
+                </c:if>
+            </tr>
+            <tr>
+                <td>CODE</td>
+                <td>
+                    <input type="text" name="CODE" value="<c:out value ='${dsk2.code}'/>">
+                </td>
+            </tr>
+            <tr>
+                <td>PRICE</td>
+                <td>
+                    <input type="text" name="PRICE" value="<c:out value ='${dsk2.price}'/>">
+                </td>
+            </tr>
+            <tr>
+                <td>COLOR</td>
+                <td>
+                    <input type="text" name="COLOR" value="<c:out value ='${dsk2.color}'/>">
+                </td>
+            </tr>
+            <tr>
+                <td>DECRIPTION</td>
+                <td>
+                    <input type="text" name="DECRIPTION" value="<c:out value ='${dsk2.decription}'/>">
+                </td>
+            </tr>
+            <tr>
+                <td>INMAGE</td>
+                <td>
+                    <input type="text" name="IMG" value="<c:out value ='${dsk2.img}'/>">
+                </td>
+            </tr>
+        </table>
        <button>SAVE</button>
     </form>
 </div>

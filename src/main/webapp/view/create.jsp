@@ -15,12 +15,44 @@
 <span>${mess1}</span>
 <div>
     <form method="post">
-        <input type="text" name="ID" placeholder="Nhập ID">
-        <input type="text" name="CODE" placeholder="Nhập CODE">
-        <input type="text" name="PRICE" placeholder="Nhập PRICE">
-        <input type="text" name="COLOR" placeholder="Nhập COLOR">
-        <input type="text" name="DECRIPTION" placeholder="Nhập DECRIPTION">
-        <input type="text" name="IMG" placeholder="Nhập ẢNH">
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>
+                    <input type="text" name="ID" placeholder="Nhập ID">
+                </td>
+            </tr>
+            <tr>
+                <td>CODE</td>
+                <td>
+                    <input type="text" name="CODE" placeholder="Nhập mã">
+                </td>
+            </tr>
+            <tr>
+                <td>PRICE</td>
+                <td>
+                    <input type="text" name="PRICE" placeholder="Nhập giá">
+                </td>
+            </tr>
+            <tr>
+                <td>COLOR</td>
+                <td>
+                    <input type="text" name="COLOR" placeholder="Nhập màu kính">
+                </td>
+            </tr>
+            <tr>
+                <td>DECRIPTION</td>
+                <td>
+                    <input type="text" name="DECRIPTION" placeholder="Nhập Mô Tả">
+                </td>
+            </tr>
+            <tr>
+                <td>INMAGE</td>
+                <td>
+                    <input type="text" name="IMG" placeholder="Nhập ẢNH">
+                </td>
+            </tr>
+        </table>
         <button>SAVE</button>
     </form>
 </div>

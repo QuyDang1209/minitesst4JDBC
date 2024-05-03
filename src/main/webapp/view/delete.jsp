@@ -16,7 +16,7 @@
 <h1>Bạn muốn xóa sản phẩm này</h1>
 <div>
     <form method="post">
-        <table>
+        <table border="1">
             <tr>
                 <td>ID</td>
                 <td value=""><c:out value ='${dsk3.id}'/></td>
@@ -36,6 +36,9 @@
             <tr>
                 <td>Decription</td>
                 <td value=""><c:out value ='${dsk3.decription}'/></td>
+            </tr>
+            <tr>
+                <td colspan="2" ><img src="${dsk3.img}" width="200" height="200"></td>
             </tr>
         </table>
         <button>DELETE</button>
